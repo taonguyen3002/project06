@@ -129,7 +129,7 @@ a {
 }
 .hero__desc {
   color: #51586a;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6667;
   margin-top: 20px;
@@ -386,13 +386,12 @@ a {
   line-height: 1.17;
 }
 .about__desc {
-  margin-top: 15px;
   font-weight: 400;
   line-height: 1.667;
   font-size: 1.8rem;
   color: #51586a;
   width: 570px;
-  margin: 0 auto;
+  margin: 15px auto 0;
 }
 .about__info {
   display: flex;
@@ -517,6 +516,8 @@ a {
   line-height: 1.8125;
   margin-top: 3px;
 }
+.gallery__mobiphone,
+.service__mobile-dot,
 .testimonial__dot {
   display: flex;
   margin-top: 40px;
@@ -524,6 +525,8 @@ a {
   align-items: center;
   gap: 16px;
 }
+.gallery__dot,
+.service__dot-item,
 .testimonial__dot--item {
   width: 16px;
   height: 16px;
@@ -531,12 +534,16 @@ a {
   background: #ccc;
   cursor: pointer;
 }
+.gallery__active,
+.service__dot-active,
 .dot__active {
   position: relative;
   border: 1px solid #5d3bee;
   background: transparent;
   border-radius: 999px;
 }
+.gallery__active::after,
+.service__dot-active::after,
 .dot__active::after {
   content: "";
   width: 12px;
@@ -754,6 +761,7 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.footer__desc,
 .footer__coppyright {
   color: #525771;
   font-family: DM Sans;
